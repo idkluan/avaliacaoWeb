@@ -49,6 +49,10 @@ li {
     padding: 0px;
 }
 
+.header-container .right {
+    width: 30%;
+}
+
 .header-container a {
     color: #000;
     text-decoration: none;
