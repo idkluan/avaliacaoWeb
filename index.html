@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=4">
+    <script src="script.js" defer></script>
+    <title>Geek House</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <a href="https://geekhouse.store/">
+                <div class="left">
+                    <div class="logo">
+                        <img src="images/logo.svg" alt="logo">
+                    </div>
+
+                    <div class="title">
+                        <h1>Geek House</h1>
+                    </div>
+                </div>
+            </a>
+
+            <div class="center">
+                <menu>
+                    <li><a href="#services-container">Serviços</a></li>
+                    <li><a href="#testimonial">Depoimentos</a></li>
+                    <li><a href="#social">Social</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                </menu>
+            </div>
+
+            <div class="right">
+                <div class="button">
+                    <a href="https://api.whatsapp.com/send?phone=5548996582297" target="_blank">Contato</a>
+                </div>
+
+                <div class="mobile-menu" style="display: none;">
+                    <img src="images/header/mobile-menu.svg" alt="mobile-menu">
+                </div>
+            </div>
+        </div>
+
+        <div class="slideout-menu">
+            <div class="menu">
+                <menu>
+                    <li><a href="#services-container">Serviços</a></li>
+                    <li><a href="#testimonial">Depoimentos</a></li>
+                    <li><a href="#social">Social</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                </menu>
+            </div>
+
+            <div class="button">
+                <a href="https://api.whatsapp.com/send?phone=5548996582297" target="_blank">Contato</a>
+            </div>
+        </div>
+
+        <div class="overlay"></div>
+    </header>
+
+    <div class="main-container">
+        <div class="title">
+            <h1><span>GAME OVER</span> <br>PARA OS SEUS PROBLEMAS</h1>
+        </div>
+
+        <div class="highlight-box" id="services-container">
+            <div class="light-bulb">
+                <img src="images/highlight-box/bulb.png" alt="light-bulb">
+            </div>
+            <div class="box">
+                <h3>Transformando <span>seus problemas técnicos</span> em soluções simples!</h3>
+            </div>
+        </div>
+
+        <div class="services-container">
+            <div class="service">
+                <img src="images/services/gear.svg" alt="manutenção">
+                <h3>Manutenção</h3>
+                <span>Conserto rápido e eficiente de PCs, consoles e celulares</span>
+            </div>
+
+            <div class="service">
+                <img src="images/services/processor.svg" alt="">
+                <h3>Upgrades</h3>
+                <span>Deixe seu equipamento mais potente e atualizado</span>
+            </div>
+
+            <div class="service">
+                <img src="images/services/brain.svg" alt="manutenção">
+                <h3>Consultoria</h3>
+                <span>Soluções personalizadas para cada necessidade</span>
+            </div>
+        </div>
+
+        <div class="cta-container">
+            <div class="button cta">
+                <a href="#form-container">Faça seu Orçamento</a>
+            </div>
+        </div>
+
+        <div class="testimonial-container">
+            <div class="title" id="testimonial">
+                <h1>DE QUEM JÁ TESTOU E<br><span>APROVOU</span></h1>
+            </div>
+
+            <div class="testimonial">
+                <div class="profile-img">
+                    <img src="images/testimonial/cody.png" alt="">
+                </div>
+
+                <div class="info">
+                    <h3>Luan Costa</h3>
+                    <span>Serviço rápido, atencioso e de confiança. Meu console voltou como novo e o atendimento foi
+                        excelente!</span>
+                </div>
+            </div>
+
+            <div class="testimonial">
+                <div class="profile-img">
+                    <img src="images/testimonial/gwen.svg" alt="">
+                </div>
+
+                <div class="info">
+                    <h3>Laura Santos</h3>
+                    <span>Meu PC foi reparado rapidamente e voltou rodando melhor do que nunca. Atendimento nota
+                        10!</span>
+                </div>
+            </div>
+
+            <div class="testimonial">
+                <div class="profile-img">
+                    <img src="images/testimonial/lindsay.svg" alt="">
+                </div>
+
+                <div class="info">
+                    <h3>Fernanda Silva</h3>
+                    <span>Atendimento excelente e conserto impecável. Meu console está funcionando perfeitamente
+                        novamente!</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-container">
+            <div class="title" id="form-container">
+                <h1><span>SEU PROBLEMA,<br></span>NOSSA MISSÃO</h1>
+            </div>
+
+            <div class="subtitle">
+                <h3>Descreva seu problema e <span>nós cuidamos do resto!</span></h3>
+            </div>
+
+            <form id="form-orcamento" action="https://formspree.io/f/xeozqejg" method="post">
+                <div class="row">
+                    <input type="text" id="name" name="name" placeholder="Seu nome..." required><br>
+                </div>
+
+                <div class="row">
+                    <input type="email" id="email" name="email" placeholder="Seu email..." required><br>
+                </div>
+
+                <div class="row mobile-column">
+                    <input type="tel" id="phone" name="phone" placeholder="Telefone" required>
+                    <input type="text" id="device" name="device" placeholder="Aparelho com defeito..." required>
+                </div>
+
+                <div class="row">
+                    <textarea name="comment" id="problem" rows="5" cols="45" placeholder="Descreva seu problema..."
+                        required></textarea>
+                </div>
+
+                <div class="row">
+                    <input type="submit" value="Enviar" id="send" />
+                </div>
+            </form>
+        </div>
+
+        <div class="about-container">
+            <div class="title" id="about">
+                <h1>SOBRE NÓS</h1>
+            </div>
+
+            <div class="about">
+                <div class="text">
+                    <p>Desde 2019, nossa missão é cuidar daquilo que move a paixão de tantos: os consoles e dispositivos
+                        que
+                        conectam pessoas ao universo dos games.
+                    </p>
+                    <p>Fundada por Haruan Rechia, técnico especializado em
+                        manutenção
+                        de consoles, nossa assistência técnica
+                        nasceu do desejo de oferecer um serviço confiável, rápido e de qualidade para a comunidade geek.
+                    </p>
+                    <p>Ao longo dos anos, conquistamos experiência em reparos de diferentes gerações de videogames,
+                        sempre
+                        prezando por transparência, atenção aos detalhes e utilização de materiais de qualidade. Mais do
+                        que
+                        consertar aparelhos, acreditamos em restaurar momentos de diversão e manter viva a conexão entre
+                        jogadores e seus jogos favoritos.
+                    </p>
+                    <p>Aqui, cada atendimento é feito com dedicação e compromisso, porque
+                        sabemos que, para quem joga, um
+                        console não é apenas um aparelho — é parte de sua história.
+                    </p>
+                </div>
+                <img src="images/about/haruan.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="left">
+                <div class="logo">
+                    <img src="images/logo.svg" alt="logo">
+                    <h1>Geek House</h1>
+                </div>
+
+                <div class="infos-container">
+                    <div class="info" id="social">
+                        <div class="social-icon">
+                            <img src="images/social-icons/instagram.svg" alt="instagram">
+                        </div>
+                        <a href="https://www.instagram.com/geek_house_tb/" target="_blank">Instagram</a>
+                    </div>
+
+                    <div class="info">
+                        <div class="social-icon">
+                            <img src="images/social-icons/tiktok.svg" alt="tiktok">
+                        </div>
+                        <a href="https://www.tiktok.com/" target="_blank">Tiktok</a>
+                    </div>
+
+                    <div class="info">
+                        <div class="social-icon">
+                            <img src="images/social-icons/youtube.svg" alt="youtube">
+                        </div>
+                        <a href="https://www.youtube.com/" target="_blank">Youtube</a>
+                    </div>
+
+                    <div class="info">
+                        <div class="social-icon">
+                            <img src="images/social-icons/location.svg" alt="location">
+                        </div>
+                        <a href="https://maps.app.goo.gl/a3fdWY4MS87FbrxP7" target="_blank">Tubarão, SC</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right">
+                <a href="#form-container">
+                    <div class="highlight-box">
+                        <div class="alert">
+                            <img src="images/highlight-box/alert.svg" alt="alert">
+                        </div>
+                        <div class="row row-alert">
+                            <h1>TEM UM <span>PROBLEMA?</span></h1>
+                        </div>
+
+                        <div class="row">
+                            <h1>NÓS RESOLVEMOS PRA VOCÊ!</h1>
+                            <img src="images/highlight-box/right-arrow.svg" alt="right-arrow">
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="copyright">
+        <span> © 2025 Geek House</span>
+    </div>
+</body>
+</html>
